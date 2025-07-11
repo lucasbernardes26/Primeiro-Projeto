@@ -1,0 +1,177 @@
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+    .default {
+      background: black;
+      width: 1000px;
+      height: 2000px;
+      margin: 0 auto;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .header {
+      background: red;
+      width: 100%;
+      height: 350px;
+    }
+
+    .menu {
+      background: black;
+      width: 100%;
+      height: 50px;
+      margin: 0;
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .banner_top {
+      background: url(IMAGENS/banner2.webp);
+      width: 100%;
+      height: 300px;
+    }
+
+    .container_body {
+      background: black;
+      width: 100%;
+      height: 1800px;
+      position: relative;
+      color: black;
+    }
+
+    .footer {
+      background: purple;
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+    }
+
+    .imgbanner {
+      width: 1000px;
+      height: 300px;
+    }
+
+    .body_left,
+    .body_center,
+    .body_right {
+      position: absolute;
+      padding: 15px;
+      box-sizing: border-box;
+      height: 350px;
+      overflow-y: auto;
+      border-radius: 0px;
+    }
+
+    .body_left {
+      background: black;
+      width: 600px;
+      left: 0;
+    }
+
+    .body_right {
+      background: #d1ecf1;
+      width: 400px;
+      left: 600px;
+      padding: 0px;
+    }
+
+    .links-menu{
+         color: blue;
+         text-decoration: none;
+         
+    }
+    .links-menu:hover{
+         color: blue;
+         text-decoration: underline;
+         font-size: 15px;
+    }
+    .links-head{
+      
+         color: white;
+         text-decoration: none;
+         padding-left:30px;
+         padding-right:30px;
+         vertical-align: bottom;
+    }
+
+     .bodyRight-slideshow{
+      position: relative;
+      width: 400px;
+      height: 350px;
+      overflow: hidden;
+    }
+    .bodySlide{
+      position: absolute;
+      width: 400px;
+      height: 100%;
+      opacity: 0;
+      transition: 1.5 ease-in-out;
+      background-size: cover;
+      background-position: center;
+      box-sizing: border-box;
+
+    }
+
+    .bodySlide:nth-child(1){
+      background-image: url("IMAGENS/Beyoncé/1.png");
+      animation: fade 12s infinite;
+    }
+    .bodySlide:nth-child(2){
+      background-image: url("IMAGENS/Beyoncé/2.png");
+      animation: fade 12s infinite 2s;
+    }
+    .bodySlide:nth-child(3){
+      background-image: url("IMAGENS/Beyoncé/3.png");
+      animation: fade 12s infinite 4s;
+    }
+    .bodySlide:nth-child(4){
+      background-image: url("IMAGENS/Beyoncé/4.png");
+      animation: fade 12s infinite 6s;
+    }
+    .bodySlide:nth-child(5){
+      background-image: url("IMAGENS/Beyoncé/5.png");
+      animation: fade 6s infinite 8s;
+    }
+    @keyframes fade {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    } 
+    .phase{
+      width: 1000px;
+      height: 30px;
+    }
+
+    #paragrafo{
+      font-family: "DM Sans", sans-serif;
+      font-style: italic;
+      font-size: 17px;
+      font-weight: 400;
+      word-spacing: 5px;
+      letter-spacing: 1.5px;
+      color: white;
+      vertical-align: middle;
+      padding-top: 10px;
+    }
+    .estilo{
+      text-align: left;
+      font-family: 'DM Sans', 'sans-serif';
+      font-size: 30px;
+      padding-bottom: 0px;
+      padding-top: 10px;
+      margin-left: 20px;
+      font-weight: bold;
+      color: white;
+    }
+    p.resumo{
+      font-family: 'DM Sans', 'sans-serif';
+      text-align: justify;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: white;
+
+    }
+    
