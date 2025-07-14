@@ -8,13 +8,16 @@
   
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+       @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+  overflow-x:hidden ;
+}
     .default {
       background: black;
       width: 1000px;
       height: 2000px;
       margin: 0 auto;
+      top: 0;
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
@@ -23,15 +26,18 @@
     .header {
       background: red;
       width: 100%;
-      height: 350px;
+      height: 300px;
+      position: relative;
     }
 
     .menu {
       background: black;
       width: 100%;
       height: 50px;
-      margin: 0;
       font-family: "DM Sans", sans-serif;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
 
     .banner_top {
@@ -49,16 +55,18 @@
     }
 
     .footer {
+      top: 0;
       background: purple;
       width: 100%;
       height: 50px;
       text-align: center;
       line-height: 50px;
       color: white;
+      z-index: 999;
     }
 
     .imgbanner {
-      width: 1000px;
+      width: 100%;
       height: 300px;
     }
 
@@ -103,6 +111,7 @@
          padding-left:30px;
          padding-right:30px;
          vertical-align: bottom;
+         position: sticky;
     }
 
      .bodyRight-slideshow{
@@ -124,23 +133,23 @@
     }
 
     .bodySlide:nth-child(1){
-      background-image: url("IMAGENS/Beyoncé/1.png");
+      background-image: url("/IMAGENS/Beyoncé/1.png");
       animation: fade 12s infinite;
     }
     .bodySlide:nth-child(2){
-      background-image: url("IMAGENS/Beyoncé/2.png");
+      background-image: url("/IMAGENS/Beyoncé/2.png");
       animation: fade 12s infinite 2s;
     }
     .bodySlide:nth-child(3){
-      background-image: url("IMAGENS/Beyoncé/3.png");
+      background-image: url("/IMAGENS/Beyoncé/3.png");
       animation: fade 12s infinite 4s;
     }
     .bodySlide:nth-child(4){
-      background-image: url("IMAGENS/Beyoncé/4.png");
+      background-image: url("/IMAGENS/Beyoncé/4.png");
       animation: fade 12s infinite 6s;
     }
     .bodySlide:nth-child(5){
-      background-image: url("IMAGENS/Beyoncé/5.png");
+      background-image: url("/IMAGENS/Beyoncé/5.png");
       animation: fade 6s infinite 8s;
     }
     @keyframes fade {
@@ -184,13 +193,12 @@
       color: white;
 
     }
-
+    
 </style>
     
 <body>
   <div class="default">
-    <div class="header">
-      <div class="menu">
+    <div class="menu">
         <a href=""class="links-head">HOME</a>
         <a href=""class="links-head">SHOP</a>
         <a href=""class="links-head">MUSIC</a>
@@ -199,6 +207,7 @@
         <a href=""class="links-head">CECRED</a>
         <a href=""class="links-head">SIRDAVIS</a>
       </div>
+    <div class="header">
       <div class="banner_top">
         <img src="IMAGENS/Design sem nome.png" class="imgbanner" />
       </div>
@@ -223,7 +232,7 @@ Em dezembro de 2024, foi eleita pela revista Billboard como a maior pop star do 
     </div>
 
     <div class="footer">
-      Todos os direitos reservados Lucas Bernardes - 2025
+      Todos os direitos reservados Lucas Bernardes - 2025 aa
     </div>
   </div>
 </body>
