@@ -1,10 +1,13 @@
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+       @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+  overflow-x:hidden ;
+}
     .default {
       background: black;
       width: 1000px;
       height: 2000px;
       margin: 0 auto;
+      top: 0;
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
@@ -13,15 +16,18 @@
     .header {
       background: red;
       width: 100%;
-      height: 350px;
+      height: 300px;
+      position: relative;
     }
 
     .menu {
       background: black;
       width: 100%;
       height: 50px;
-      margin: 0;
       font-family: "DM Sans", sans-serif;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
 
     .banner_top {
@@ -39,16 +45,18 @@
     }
 
     .footer {
+      top: 0;
       background: purple;
       width: 100%;
       height: 50px;
       text-align: center;
       line-height: 50px;
       color: white;
+      z-index: 999;
     }
 
     .imgbanner {
-      width: 1000px;
+      width: 100%;
       height: 300px;
     }
 
@@ -93,6 +101,7 @@
          padding-left:30px;
          padding-right:30px;
          vertical-align: bottom;
+         position: sticky;
     }
 
      .bodyRight-slideshow{
